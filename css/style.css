@@ -16,17 +16,30 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+   --cor-fundo:#00002e;
 }
 
 /*BODY*/
-	body{
-
+	body{	
+        background-color:var(--cor-fundo);
+		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+	    display: flex;
+		flex-direction: column;
+		align-items: center;	
+		width:100vw;
+		height:100vh;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		width:320px;
+        
+	}
+	header.topo img{
+		width:100%;
+	}
+	header.topo figcaption{
+		display: none;
 	}
 
 /*RODAPÉ*/
@@ -34,5 +47,69 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+
 	}
+.pg-home header h2 {
+	color:white;
+	font-size: 3rem;
+	font-weight: bold;
+	margin:0px auto 30px auto;
+}
+.pg-home ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.pg-home ul li {
+
+	width: 186px;
+	cursor: pointer;
+}
+.pg-home ul li img{
+   width:80%;
+   margin: 5px;
+}
+.pg-home figure figcaption {
+	display: none;
+}
+.img_user {
+	width: 168px;
+	margin: 10px 0px;
+}
+.pg-home ul li img:hover {
+	border: 2px solid #fff;
+}
+section {
+	margin:10% 0 0 0;
+}
+footer button {
+	background-color: var(--cor-fundo);
+	border:2px solid white;
+	font-size: 16px;
+	padding:20px 30px 20px 30px;
+	color:white;
+}
+footer button:hover {
+	transition: 3s;
+	background-color: rgb(172, 172, 172);
+}
+.pg-home ul li h3 {
+	color:white;
+} 
+@media (min-width:1024px) {
+	body{
+        background-color:var(--cor-fundo);
+		font-family: Arial, Helvetica, sans-serif;
+	    display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+
